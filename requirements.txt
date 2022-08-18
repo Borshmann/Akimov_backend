@@ -2,3 +2,4 @@ flask
 flask-mail
 flask-cors
 python-dotenv
+waitress
