@@ -16,8 +16,7 @@ PASSWORD = os.environ.get('PASSWORD')
 EAMIL_SRV = os.environ.get('EAMIL_SRV')
 EMAIL_PORT = os.environ.get('EMAIL_PORT')
 
-ALLOWED_ORIGINS = ['https://daryvolkhvov.ru', 'https://дары-волхвов.рф', 'https://дарыволхвов.рф']
-
+ALLOWED_ORIGINS = 'https://daryvolkhvov.ru'
 
 app = Flask(__name__)
 CORS(app, origins=ALLOWED_ORIGINS)
@@ -46,11 +45,13 @@ def cart():
     customer_email_adress = art.customer_email(bill)
 
     try:
-        msg = Message("Заказ ДАРЫ ВОЛХВОВ", sender="akimovjewelry@yandex.ru", recipients=[corp_email_adress])
+        msg = Message("Заказ ДАРЫ ВОЛХВОВ", sender="akimovjewelry@yandex.ru",
+                      recipients=[corp_email_adress])
         msg.body = str(art.article_compiler(bill))
         mail.send(msg)
 
-        msg2 = Message( str(art.customer_name(bill)) + ", благодарим за заказ!", sender="akimovjewelry@yandex.ru", recipients=[customer_email_adress])
+        msg2 = Message(str(art.customer_name(bill)) + ", благодарим за заказ!",
+                       sender="akimovjewelry@yandex.ru", recipients=[customer_email_adress])
         msg2.body = art.customer_compiler(bill)
         mail.send(msg2)
 
