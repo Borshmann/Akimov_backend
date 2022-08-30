@@ -102,7 +102,7 @@ body_7 = """руб</th>
             <div style="clear: both;margin-top: 0px;text-align: center;width: 100%;">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
                 <tr>
-                  <td style="padding-bottom: 10px;padding-top: 10px;background-color: #262626;border-radius: 0 0 15px 15px;">
+                  <td style="padding-bottom: 10px;padding-top: 10px;background-color: #262626;border-radius: 0 0 15px 15px;  box-shadow: 5px 5px 10px grey;">
                     <span style="color: #d4d4d4;font-family: 'Tahoma', sans-serif;font-size: 11px;font-weight: normal;margin: 0;margin-bottom: 1px;">«Торговый дом «Акимов» © <br> 199106, г. Санкт-Петербург, 19 линия В.О., д. 32, корп. 6, лит. Л<br>© 2022 — 2023</span>
                   </td>
                 </tr>
