@@ -16,7 +16,8 @@ PASSWORD = os.environ.get('PASSWORD')
 EAMIL_SRV = os.environ.get('EAMIL_SRV')
 EMAIL_PORT = os.environ.get('EMAIL_PORT')
 
-ALLOWED_ORIGINS = 'https://daryvolkhvov.ru'
+ALLOWED_ORIGINS = ['https://daryvolkhvov.ru', 'https://дары-волхвов.рф', 'https://дарыволхвов.рф']
+
 
 app = Flask(__name__)
 CORS(app, origins=ALLOWED_ORIGINS)
@@ -27,7 +28,6 @@ app.config['MAIL_PORT'] = EMAIL_PORT
 app.config['MAIL_USERNAME'] = EMAIL
 app.config['MAIL_DEFAULT_SENDER'] = EMAIL
 app.config['MAIL_PASSWORD'] = PASSWORD
-
 
 mail = Mail(app)
 data = json.load(open('db.json', 'r', encoding='utf8'))
@@ -45,14 +45,12 @@ def cart():
     customer_email_adress = art.customer_email(bill)
 
     try:
-        msg = Message("Заказ ДАРЫ ВОЛХВОВ", sender="akimovjewelry@yandex.ru",
-                      recipients=[corp_email_adress])
+        msg = Message("Заказ ДАРЫ ВОЛХВОВ", sender="akimovjewelry@yandex.ru", recipients=[corp_email_adress])
         msg.body = str(art.article_compiler(bill))
         mail.send(msg)
 
-        msg2 = Message(str(art.customer_name(bill)) + ", благодарим за заказ!",
-                       sender="akimovjewelry@yandex.ru", recipients=[customer_email_adress])
-        msg2.body = art.customer_compiler(bill)
+        msg2 = Message( str(art.customer_name(bill)) + ", благодарим за заказ!", sender="akimovjewelry@yandex.ru", recipients=[customer_email_adress])
+        msg2.html = art.customer_compiler(bill)
         mail.send(msg2)
 
         return {"message": "email send!"}
@@ -62,5 +60,4 @@ def cart():
 
 
 if __name__ == "__main__":
-    from waitress import serve
-    serve(app, host="127.0.0.1", port=5000)
+    app.run(debug=True)
