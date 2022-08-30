@@ -1,4 +1,5 @@
 from datetime import datetime as time
+import html_creator as creator
 
 data = {"gold": "2",
         "silver": "1",
@@ -8,6 +9,7 @@ data = {"gold": "2",
         "кольцо": "24",
         "цепь": "25",
         "серьги": "27"}
+
 
 def bill_number_add():
     file=open("num.counter", "r+")
@@ -107,6 +109,7 @@ def customer_compiler(bill):
     items_dict = order_dict.get("order")
     customer = order_dict.get("customer")
     article = list()
+    article_str = ""
     total = 0
 
     for item in items_dict:
@@ -118,22 +121,31 @@ def customer_compiler(bill):
 
         material_as_text = 'Золото 585' if item["material"] == 'gold' else 'Серебро 725'
 
-        article_result = (str(item["type"]) + " " + str(item["name"]).upper()
-                          + " (" + material_as_text + ") в количестве " + str(item["count"]) + " шт. "
-                          + "(" + str(result_price) + " р.)\n")
 
-        article.append(article_result)
+        result = ("<tr>" + creator.image_start + item["article"] + "_" + item["material"] + ".webp".replace('&#32;', '') + creator.image_end
+                  + """<th align="left" style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;">"""
+                  + str(item["type"]) + "<br>" + str(item["name"]).upper() +
+                  """<br><p style="color: #696969;font-family: 'Tahoma', sans-serif;font-size: 11px;font-weight: normal;margin: 0;margin-bottom: 1px;">"""
+                  + material_as_text + "</p></th>" + """<th align="center" style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;">"""
+                  + str(item["count"]) + """</th><th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;">"""
+                  + str(item["price"]) + """ руб</th><th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;">"""
+                  + str(result_price) + " руб</th></tr>" + "\n")
 
-    bill_counter = bill_number_check()
+        article.append(result)
+        article_str = "".join(article)
 
+    print(article_str)
     date = time.now()
     date_serialized = date.strftime("%d %m %Y")
 
-    result = ("Заказ № "+ str(bill_counter) + " от " + str(date_serialized) + "\n\n"
-      + str(customer["name"]) + ", компания ООО 'АКИМОВ' благодарит за Ваш заказ! \nЗаказаные вами позиции:\n\n"
-      + str("".join(article))
-      + "\nСумма заказа - " + str(total) + "руб."+ "\n\nВ течении часа ожидайте звонка от нашего менеджера, чтобы уточнить все детали.\n\nСпасибо!")
+    bill_counter = bill_number_check()
 
+    result = (creator.body_1 + str(customer["name"]) + creator.body_2 + str(bill_counter) + creator.body_3
+              + str(date_serialized) + creator.body_4 + str(customer["name"]) + creator.body_5 + str(article_str) + creator.body_6
+              + str(total) + creator.body_7)
+
+    print(result)
+    total = 0
     return result
 
 
