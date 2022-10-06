@@ -19,7 +19,7 @@ EMAIL_PORT = os.environ.get('EMAIL_PORT')
 HOST = os.environ.get('HOST')
 PORT = os.environ.get('PORT')
 
-ALLOWED_ORIGINS = ['https://daryvolkhvov.ru', 'http://localhost:3000']
+ALLOWED_ORIGINS = ['https://daryvolkhvov.ru']
 
 app = Flask(__name__)
 CORS(app, origins=ALLOWED_ORIGINS)
