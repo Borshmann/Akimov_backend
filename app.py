@@ -16,8 +16,10 @@ PASSWORD = os.environ.get('PASSWORD')
 EAMIL_SRV = os.environ.get('EAMIL_SRV')
 EMAIL_PORT = os.environ.get('EMAIL_PORT')
 
-ALLOWED_ORIGINS = ['https://daryvolkhvov.ru', 'https://дары-волхвов.рф', 'https://дарыволхвов.рф']
+HOST = os.environ.get('HOST')
+PORT = os.environ.get('PORT')
 
+ALLOWED_ORIGINS = ['https://daryvolkhvov.ru', 'http://localhost:3000']
 
 app = Flask(__name__)
 CORS(app, origins=ALLOWED_ORIGINS)
@@ -41,23 +43,26 @@ def items():
 @app.route("/cart", methods=["POST"])
 def cart():
     bill = request.get_json()
-    corp_email_adress = "nikolaymi4@hotmail.com"
     customer_email_adress = art.customer_email(bill)
 
     try:
-        msg = Message("Заказ ДАРЫ ВОЛХВОВ", sender="akimovjewelry@yandex.ru", recipients=[corp_email_adress])
+        msg = Message("Заказ ДАРЫ ВОЛХВОВ", sender=EMAIL,
+                      recipients=[EMAIL])
         msg.body = str(art.article_compiler(bill))
         mail.send(msg)
 
-        msg2 = Message( str(art.customer_name(bill)) + ", благодарим за заказ!", sender="akimovjewelry@yandex.ru", recipients=[customer_email_adress])
+        msg2 = Message(str(art.customer_name(bill)) + ", благодарим за заказ!",
+                       sender=EMAIL, recipients=[customer_email_adress])
         msg2.html = art.customer_compiler(bill)
         mail.send(msg2)
 
         return {"message": "email send!"}
 
     except:
+        print('not send!')
         return {"message": "email ERROR"}
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    from waitress import serve
+    serve(app, host=HOST, port=PORT)
