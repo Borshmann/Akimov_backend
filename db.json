@@ -10,8 +10,8 @@
       "silver": {
         "size": {
           "60": {
-            "weight": "25",
-            "prices": "43 200"
+            "weight": "24",
+            "prices": "60 080"
           }
         },
         "gems": "гранат"
@@ -38,8 +38,8 @@
       "silver": {
         "size": {
           "65": {
-            "weight": "13",
-            "prices": "33 380"
+            "weight": "12",
+            "prices": "34 840"
           }
         },
         "gems": "топаз, фианит"
@@ -66,8 +66,8 @@
       "silver": {
         "size": {
           "51": {
-            "weight": "23",
-            "prices": "37 580"
+            "weight": "23,5",
+            "prices": "46 860"
           }
         },
         "gems": ""
@@ -94,8 +94,8 @@
       "silver": {
         "size": {
           "49": {
-            "weight": "13",
-            "prices": "30 800"
+            "weight": "12,1",
+            "prices": "35 200"
           }
         },
         "gems": "топаз"
@@ -149,17 +149,21 @@
     "materials": {
       "silver": {
         "size": {
-          "20": {
-            "weight": "26",
-            "prices": "39 000"
+          "19,5": {
+            "weight": "14,7",
+            "prices": "39 840"
           },
-          "21": {
-            "weight": "26,5",
-            "prices": "39 750"
+          "20,5": {
+            "weight": "17,5",
+            "prices": "45 360"
           },
-          "22": {
+          "21,5": {
+            "weight": "20,6",
+            "prices": "50 920"
+          },
+          "23,5": {
             "weight": "27",
-            "prices": "40 500"
+            "prices": "58 000"
           }
         },
         "gems": "гранат"
@@ -194,16 +198,12 @@
       "silver": {
         "size": {
           "18": {
-            "weight": "7,2",
-            "prices": "17 300"
+            "weight": "7",
+            "prices": "28 780"
           },
-          "19": {
-            "weight": "8",
-            "prices": "19 200"
-          },
-          "20": {
-            "weight": "8,8",
-            "prices": "21 120"
+          "19,5": {
+            "weight": "9",
+            "prices": "31 080"
           }
         },
         "gems": "топаз, фианит"
@@ -292,18 +292,6 @@
           "50": {
             "weight": "9",
             "prices": "Ожидается"
-          },
-          "55": {
-            "weight": "10,5",
-            "prices": "Ожидается"
-          },
-          "60": {
-            "weight": "12",
-            "prices": "Ожидается"
-          },
-          "65": {
-            "weight": "13,5",
-            "prices": "Ожидается"
           }
         },
         "gems": "топаз"
@@ -342,8 +330,8 @@
       "silver": {
         "size": {
           "33": {
-            "weight": "6,6",
-            "prices": "38 820"
+            "weight": "13,4",
+            "prices": "46 580"
           }
         },
         "gems": "топаз"
@@ -370,8 +358,8 @@
       "silver": {
         "size": {
           "64": {
-            "weight": "21,5",
-            "prices": "65 820"
+            "weight": "21",
+            "prices": "79 000"
           }
         },
         "gems": "шпинель"
@@ -398,8 +386,8 @@
       "silver": {
         "size": {
           "60": {
-            "weight": "26,5",
-            "prices": "48 360"
+            "weight": "23",
+            "prices": "58 040"
           }
         },
         "gems": "топаз"
@@ -426,8 +414,8 @@
       "silver": {
         "size": {
           "43": {
-            "weight": "16,5",
-            "prices": "48 740"
+            "weight": "15,5",
+            "prices": "54 660"
           }
         },
         "gems": "шпинель"
@@ -454,8 +442,8 @@
       "silver": {
         "size": {
           "42": {
-            "weight": "12",
-            "prices": "29 260"
+            "weight": "11,7",
+            "prices": "34 000"
           }
         },
         "gems": "топаз"
@@ -512,14 +500,6 @@
           "21": {
             "weight": "15",
             "prices": "Ожидается"
-          },
-          "22": {
-            "weight": "18",
-            "prices": "Ожидается"
-          },
-          "23": {
-            "weight": "21",
-            "prices": "Ожидается"
           }
         },
         "gems": "топаз"
@@ -553,17 +533,17 @@
     "materials": {
       "silver": {
         "size": {
-          "18": {
-            "weight": "8,5",
-            "prices": "18 700"
+          "17,5": {
+            "weight": "9,3",
+            "prices": "31 180"
           },
-          "19": {
-            "weight": "9",
-            "prices": "19 800"
+          "18,5": {
+            "weight": "11",
+            "prices": "34 700"
           },
-          "20": {
-            "weight": "9,5",
-            "prices": "20 900"
+          "19,5": {
+            "weight": "12,3",
+            "prices": "36 900"
           }
         },
         "gems": "фианит"
@@ -642,20 +622,20 @@
       "silver": {
         "size": {
           "50": {
-            "weight": "22",
-            "prices": "33 000"
+            "weight": "22,7",
+            "prices": "43 660"
           },
           "55": {
-            "weight": "24,5",
-            "prices": "36 750"
+            "weight": "25,2",
+            "prices": "46 960"
           },
           "60": {
-            "weight": "27",
-            "prices": "40 500"
+            "weight": "26,7",
+            "prices": "48 100"
           },
           "65": {
-            "weight": "29,5",
-            "prices": "44 250"
+            "weight": "28,9",
+            "prices": "50 340"
           }
         },
         "gems": ""
@@ -694,8 +674,8 @@
       "silver": {
         "size": {
           "34": {
-            "weight": "4,2",
-            "prices": "39 680"
+            "weight": "9,9",
+            "prices": "47 620"
           }
         },
         "gems": "топаз"
@@ -722,8 +702,8 @@
       "silver": {
         "size": {
           "70": {
-            "weight": "37,5",
-            "prices": "52 780"
+            "weight": "34",
+            "prices": "64 680"
           }
         },
         "gems": ""
@@ -750,8 +730,8 @@
       "silver": {
         "size": {
           "61": {
-            "weight": "31,5",
-            "prices": "49 620"
+            "weight": "32",
+            "prices": "61 020"
           }
         },
         "gems": ""
@@ -779,18 +759,6 @@
         "size": {
           "19": {
             "weight": "9",
-            "prices": "Ожидается"
-          },
-          "20": {
-            "weight": "9,3",
-            "prices": "Ожидается"
-          },
-          "21": {
-            "weight": "9,6",
-            "prices": "Ожидается"
-          },
-          "22": {
-            "weight": "10",
             "prices": "Ожидается"
           }
         },
@@ -829,17 +797,9 @@
     "materials": {
       "silver": {
         "size": {
-          "55": {
-            "weight": "22",
-            "prices": "33 000"
-          },
           "60": {
-            "weight": "23",
-            "prices": "34 000"
-          },
-          "65": {
             "weight": "24",
-            "prices": "35 000"
+            "prices": "43 260"
           }
         },
         "gems": ""
@@ -874,8 +834,8 @@
       "silver": {
         "size": {
           "49": {
-            "weight": "29",
-            "prices": "41 820"
+            "weight": "27",
+            "prices": "54 020"
           }
         },
         "gems": ""
@@ -902,12 +862,12 @@
       "silver": {
         "size": {
           "44": {
-            "weight": "7,5",
-            "prices": "18 240"
+            "weight": "7,4",
+            "prices": "21 880"
           },
-          "56": {
-            "weight": "16,5",
-            "prices": "25 900"
+          "55": {
+            "weight": "14,4",
+            "prices": "37 440"
           }
         },
         "gems": ""
@@ -934,8 +894,8 @@
       "silver": {
         "size": {
           "42": {
-            "weight": "11",
-            "prices": "23 420"
+            "weight": "13",
+            "prices": "33 740"
           }
         },
         "gems": ""
@@ -961,21 +921,17 @@
     "materials": {
       "silver": {
         "size": {
-          "19": {
-            "weight": "12,5",
-            "prices": "18 750"
+          "19,5": {
+            "weight": "14,5",
+            "prices": "39 260"
           },
-          "20": {
-            "weight": "14",
-            "prices": "21 000"
+          "20,5": {
+            "weight": "166,2",
+            "prices": "42 060"
           },
-          "21": {
-            "weight": "15,5",
-            "prices": "23 250"
-          },
-          "22": {
-            "weight": "17",
-            "prices": "25 500"
+          "22,5": {
+            "weight": "21,5",
+            "prices": "51 540"
           }
         },
         "gems": "топаз"
@@ -1014,16 +970,12 @@
       "silver": {
         "size": {
           "55": {
-            "weight": "19",
-            "prices": "28 500"
+            "weight": "20,9",
+            "prices": "40 840"
           },
           "60": {
-            "weight": "21",
-            "prices": "31 500"
-          },
-          "65": {
-            "weight": "23",
-            "prices": "34 500"
+            "weight": "23,4",
+            "prices": "44 480"
           }
         },
         "gems": ""
@@ -1058,8 +1010,8 @@
       "silver": {
         "size": {
           "51": {
-            "weight": "17,5",
-            "prices": "24 500"
+            "weight": "12,7",
+            "prices": "34 340"
           }
         },
         "gems": ""
@@ -1086,8 +1038,8 @@
       "silver": {
         "size": {
           "53": {
-            "weight": "12",
-            "prices": "17 620"
+            "weight": "8",
+            "prices": "23 600"
           }
         },
         "gems": ""
@@ -1114,8 +1066,8 @@
       "silver": {
         "size": {
           "32": {
-            "weight": "5,2",
-            "prices": "20 960"
+            "weight": "11,2",
+            "prices": "30 180"
           }
         },
         "gems": ""
@@ -1143,14 +1095,6 @@
         "size": {
           "18": {
             "weight": "4,5",
-            "prices": "Ожидается"
-          },
-          "19": {
-            "weight": "5,5",
-            "prices": "Ожидается"
-          },
-          "20": {
-            "weight": "6,5",
             "prices": "Ожидается"
           }
         },
@@ -1186,8 +1130,8 @@
       "silver": {
         "size": {
           "24": {
-            "weight": "2,7",
-            "prices": "7 940"
+            "weight": "2,9",
+            "prices": "9 520"
           }
         },
         "gems": ""
@@ -1214,8 +1158,8 @@
       "silver": {
         "size": {
           "22": {
-            "weight": "2,3",
-            "prices": "6 700"
+            "weight": "2,4",
+            "prices": "8 040"
           }
         },
         "gems": ""
@@ -1242,8 +1186,8 @@
       "silver": {
         "size": {
           "18": {
-            "weight": "3,1",
-            "prices": "9 460"
+            "weight": "3,45",
+            "prices": "11 360"
           }
         },
         "gems": ""
@@ -1270,8 +1214,8 @@
       "silver": {
         "size": {
           "19": {
-            "weight": "4,4",
-            "prices": "9 860"
+            "weight": "3,6",
+            "prices": "11 820"
           }
         },
         "gems": ""
