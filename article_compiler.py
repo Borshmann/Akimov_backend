@@ -79,7 +79,7 @@ def article_compiler(bill):
             result_price = int(item["price"]) * int(item["count"])
         total = total + result_price
 
-        text_material = 'Золото 585' if item["material"] == 'gold' else 'Серебро 725'
+        text_material = 'Золото 585' if item["material"] == 'gold' else 'Серебро 925'
 
         article_result = (str(article_type) + str(article_material) + "." + str(item["article"]) + ".0"
                             + str(item["size"]) + "         " + str(item["type"]) + " " + str(item["name"]).upper()

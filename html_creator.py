@@ -51,14 +51,6 @@ body_4 = """</h4></th>
                       <th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;"align="left">"""
 body_5 = """</th>
                     </tr>
-                    <tr>
-                      <th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;"align="left">Способ доставки: </th>
-                      <th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;"align="left">Курьерская доставка по адресу: <br>Москва, Кремль, кабинет 23</th>
-                    </tr>
-                    <tr>
-                      <th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;"align="left">Способ оплаты: </th>
-                      <th style="color: #black;font-family: 'Tahoma', sans-serif;font-size: 13px;font-weight: normal;margin: 0;margin-bottom: 0px;margin-top: 0px;"align="left">Оплата курьеру</th>
-                    </tr>
                   </table>
                   <br>
                   <table>
@@ -88,7 +80,7 @@ body_7 = """руб</th>
                   <table>
                     <br>
                     <tr>
-                      <th align="left" ><p style="color: #696969;font-family: 'Tahoma', sans-serif;font-size: 11px;font-weight: normal;margin: 0;margin-bottom: 1px;">Звоните, если возникли какие-то вопросы:<br>8 (812) 123-45-67<br>8 (812) 123-34-78<br></p></th>
+                      <th align="left" ><p style="color: #696969;font-family: 'Tahoma', sans-serif;font-size: 11px;font-weight: normal;margin: 0;margin-bottom: 1px;">Звоните, если возникли какие-то вопросы:<br>8 (812) 323-94-53<br>8 (812) 325-11-10<br></p></th>
                     </tr>
                   </table>
                 </td>
